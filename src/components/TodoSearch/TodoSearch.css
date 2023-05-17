@@ -1,0 +1,13 @@
+.input-seach {
+    width: 80%;
+    margin: 0 auto;
+    padding: 10px 1rem;
+    border-radius: 40px;
+    margin: 1rem auto;
+    font-size: 1rem;
+}
+
+.input-seach:focus {
+    outline-color: hsl(206.28deg 95.8% 71.96%);
+    ;
+}

@@ -1,0 +1,52 @@
+li {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 6px;
+
+}
+
+li .TodoItem-p {
+    color: #2e3c53;
+    font-weight: bold;
+    font-size: 1.2rem;
+    width: 230px;
+}
+
+li span {
+    cursor: pointer;
+}
+
+
+.check,
+.delete {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+}
+
+.delete {
+    border: solid 3px rgb(175, 21, 21);
+    color: rgb(175, 21, 21);
+}
+
+.check {
+    background-color: rgba(128, 128, 128, 0.589);
+    color: #fff;
+}
+
+.check--active {
+    background-color: hsl(120deg 38.46% 84.71%);
+    color: hsl(122.29deg 41.83% 49.22%);
+
+}
+
+.completed {
+    text-decoration: 2px line-through;
+
+}

@@ -1,0 +1,58 @@
+.container-form {
+    width: 500px;
+    height: 400px;
+    background-color: #fff;
+    position: absolute;
+    top: 20%;
+}
+
+.form {
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.form label {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.form textarea {
+    border-radius: 4px;
+    width: 90%;
+    height: 120px;
+    border: 2px solid #000;
+    text-align: center;
+    font-size: 30px;
+    padding: 1rem 0;
+}
+
+.form textarea:focus {
+    outline-color: #61dafa;
+}
+
+.container-btns {
+    display: flex;
+    width: 80%;
+    justify-content: space-around;
+    padding-bottom: 1rem;
+}
+
+.btn-form {
+    padding: 10px 30px;
+    border: none;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 4px;
+}
+
+
+
+.btn-form-add {
+    background-color: #61dafa;
+}

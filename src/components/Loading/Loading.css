@@ -1,0 +1,37 @@
+.loading {
+    height: 60px;
+    background-color: rgba(175, 173, 173, 0.648);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.loading p {
+    background-color: rgba(224, 122, 122, 0.648);
+    width: 230px;
+    height: 22px;
+    border-radius: 10px;
+
+}
+
+.loading span {
+    width: 25px;
+    height: 25px;
+    background-color: rgba(175, 173, 173, 0.648);
+    border-radius: 50%;
+
+}
+
+.skeleton {
+    animation: skeleton-loading 1s linear infinite alternate;
+}
+
+@keyframes skeleton-loading {
+    0% {
+        background-color: hsla(0, 2%, 75%, 0.397);
+    }
+
+    100% {
+        background-color: hsl(0, 0%, 96%);
+    }
+}
