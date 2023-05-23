@@ -1,0 +1,14 @@
+.container-noTask p:nth-child(2) {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.container-noTask p:nth-child(3) {
+    font-weight: lighter;
+    color: #615f5f;
+
+}
+
+.container-noTask {
+    margin-top: 4rem;
+}

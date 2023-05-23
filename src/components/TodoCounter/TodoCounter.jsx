@@ -1,18 +1,20 @@
 import { useTodosContext } from "../../TodoContext/TodoContext";
+import "./TodoCounter.css";
 export function TodoCounter() {
   const { totalTodos, completedTodos } = useTodosContext();
   let isCompleted = completedTodos === totalTodos;
-  // totalTodos === 0 ? localStorage.removeItem("TodosReact") : null;
+  let nametasks = totalTodos > 1 ? "tareas" : "tarea";
   return (
     <>
+      <h1 className='counter-title'>Bienvenido!</h1>
       {isCompleted ? (
-        <h1>
-          Has completado <br /> todas tus tareas 🎇🎉
-        </h1>
+        <p className='counter-text'>No tienes tareas pendientes</p>
       ) : (
-        <h1>
-          Has completado {completedTodos} de {totalTodos} <br /> tareas
-        </h1>
+        <p className='counter-text'>
+          Has completado <span>{completedTodos}</span> de
+          <span> {totalTodos} </span>
+          {nametasks}
+        </p>
       )}
     </>
   );

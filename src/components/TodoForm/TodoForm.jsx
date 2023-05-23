@@ -18,10 +18,10 @@ export default function TodoForm() {
     <>
       <div className='container-form'>
         <form className='form' onSubmit={handleSubmit}>
-          <label>Escribe tu nuevo TODO</label>
+          <label>Nombre de la tarea</label>
           <textarea
             onChange={saveNewToDo}
-            placeholder='Añade un nuevo TODO '
+            placeholder='Añade una nueva tarea '
           ></textarea>
           <div className='container-btns'>
             <button

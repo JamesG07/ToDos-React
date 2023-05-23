@@ -1,0 +1,15 @@
+.counter-title {
+    text-align: start;
+    color: #1c1c53;
+}
+
+.counter-text {
+    color: rgba(128, 128, 128, 0.765);
+    margin-top: 0;
+    text-align: start;
+}
+
+.counter-text span {
+    color: black;
+    font-weight: bold;
+}

@@ -3,9 +3,13 @@
     place-content: center;
     width: 100%;
     height: 100%;
+    background-color: rgb(190, 202, 242);
+    font-family: 'Poppins', sans-serif;
 }
 
-h1 {
+h1,
+h2,
+p {
     margin: 0;
     padding: 0;
 }
@@ -15,10 +19,12 @@ ul {
 }
 
 .container {
-    min-width: 400px;
-    min-height: 700px;
+    height: 600px;
+    width: 450px;
+    border-radius: 30px;
     display: flex;
     text-align: center;
+    justify-content: center;
     flex-direction: column;
     background-color: white;
     position: relative;
@@ -26,4 +32,10 @@ ul {
 
 button {
     cursor: pointer;
+}
+
+.main-app {
+    width: 80%;
+    height: 90%;
+    margin: 0 auto;
 }

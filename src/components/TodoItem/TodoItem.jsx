@@ -4,7 +4,7 @@ export function TodoItem({ text, completed, onComplete, onDelete }) {
   const textClass = completed ? "TodoItem-p completed" : "TodoItem-p";
 
   return (
-    <li>
+    <li className='item-li'>
       <span onClick={onComplete} className={spanClass}>
         ✔
       </span>
