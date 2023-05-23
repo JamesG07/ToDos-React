@@ -39,3 +39,17 @@ button {
     height: 90%;
     margin: 0 auto;
 }
+
+.main-app a {
+    color: #1c1c53;
+    text-decoration: none;
+    position: absolute;
+    font-weight: bold;
+    bottom: 15px;
+    left: 50px;
+    font-size: 15px;
+}
+
+.main-app a span {
+    text-decoration: underline;
+}

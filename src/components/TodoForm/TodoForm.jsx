@@ -8,7 +8,6 @@ export default function TodoForm() {
   const handleSubmit = (e) => {
     e.preventDefault();
     addNewTodo(newTodoValue);
-    // setErrorAddNewTask(" ");
   };
   const saveNewToDo = (e) => {
     setNewTodoValue(e.target.value.trim());

@@ -50,6 +50,9 @@ export function AppUi() {
             ))}
           </TodoList>
           <CreateTodoButton />
+          <a href='https://www.linkedin.com/in/jhonjamesbedoya/'>
+            By<span> Jhon James</span>
+          </a>
           {isOpenModal && (
             <Modal>
               <TodoForm />
