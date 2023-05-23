@@ -1,14 +1,14 @@
 import "./TodoForm.css";
 import { useTodosContext } from "../../TodoContext/TodoContext";
 import { useState } from "react";
+import ErrorMessage from "../ErrorMessage/ErrorMessage";
 export default function TodoForm() {
-  const { setIsOpenModal, addNewTodo } = useTodosContext();
+  const { setIsOpenModal, addNewTodo, errorAddNewTask } = useTodosContext();
   const [newTodoValue, setNewTodoValue] = useState("");
   const handleSubmit = (e) => {
     e.preventDefault();
-
     addNewTodo(newTodoValue);
-    setIsOpenModal(false);
+    // setErrorAddNewTask(" ");
   };
   const saveNewToDo = (e) => {
     setNewTodoValue(e.target.value.trim());
@@ -18,6 +18,7 @@ export default function TodoForm() {
     <>
       <div className='container-form'>
         <form className='form' onSubmit={handleSubmit}>
+          <ErrorMessage errorAddNewTask={errorAddNewTask} />
           <label>Nombre de la tarea</label>
           <textarea
             onChange={saveNewToDo}

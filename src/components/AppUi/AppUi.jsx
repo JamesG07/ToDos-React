@@ -39,10 +39,10 @@ export function AppUi() {
             )}
             {error && <h2>error</h2>}
             {!loading && searchedTodos.length === 0 && <NoTask />}
-            {searchedTodos.map((item) => (
+            {searchedTodos.map((item, index) => (
               <TodoItem
+                key={index}
                 text={item.text}
-                key={item.text}
                 completed={item.completed}
                 onComplete={() => completeTodo(item.text)}
                 onDelete={() => deleteTodo(item.text)}

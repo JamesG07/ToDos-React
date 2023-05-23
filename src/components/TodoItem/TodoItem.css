@@ -32,21 +32,25 @@
     border-radius: 50%;
 }
 
-.delete {
-    border: solid 3px rgb(175, 21, 21);
-    color: rgb(175, 21, 21);
+.delete:hover {
+    background-color: rgba(255, 0, 0, 0.496);
+    color: #fff;
+
 }
 
-.check {
+.check,
+.delete {
     background-color: rgba(128, 128, 128, 0.589);
     color: #fff;
 }
 
-.check--active {
+.check--active,
+.check:hover {
     background-color: hsl(120deg 38.46% 84.71%);
     color: hsl(122.29deg 41.83% 49.22%);
 
 }
+
 
 .completed {
     text-decoration: 2px line-through;

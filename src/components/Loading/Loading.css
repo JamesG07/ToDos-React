@@ -6,6 +6,10 @@
     align-items: center;
 }
 
+.loading {
+    border-radius: 6px;
+}
+
 .loading p {
     background-color: rgba(224, 122, 122, 0.648);
     width: 230px;

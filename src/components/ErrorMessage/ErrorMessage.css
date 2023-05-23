@@ -1,0 +1,9 @@
+.container-errorMessage {
+    background-color: rgb(250, 114, 114);
+    width: 90%;
+    text-align: center;
+}
+
+.container-errorMessage p {
+    color: white;
+}

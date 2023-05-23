@@ -6,6 +6,7 @@ const TodoContext = createContext();
 export const TodoProvider = ({ children }) => {
   const [searchValue, setSearchValue] = useState("");
   const [isOpenModal, setIsOpenModal] = useState(false);
+  const [errorAddNewTask, setErrorAddNewTask] = useState("");
   const {
     item: toDos,
     saveItem,
@@ -38,11 +39,15 @@ export const TodoProvider = ({ children }) => {
   const addNewTodo = (text) => {
     const newTodos = [...toDos];
     let isEqual = newTodos.some((item) => item.text == text);
-    if (isEqual) {
-      alert("ya esxiste la tarea");
-    } else {
+    if (text && !isEqual) {
       newTodos.push({ text, completed: false });
       saveItem(newTodos);
+      setIsOpenModal(false);
+      setErrorAddNewTask("");
+    } else if (!text) {
+      setErrorAddNewTask("No se puede enviar el campo vacío");
+    } else if (isEqual) {
+      setErrorAddNewTask("Ya existe la tarea");
     }
   };
 
@@ -59,6 +64,7 @@ export const TodoProvider = ({ children }) => {
     searchedTodos,
     isOpenModal,
     setIsOpenModal,
+    errorAddNewTask,
   };
   return <TodoContext.Provider value={value}>{children}</TodoContext.Provider>;
 };

@@ -4,6 +4,7 @@
     gap: 1rem;
     max-height: 280px;
     overflow-y: scroll;
+    padding: 4px 4px;
 }
 
 .todoList::-webkit-scrollbar {
