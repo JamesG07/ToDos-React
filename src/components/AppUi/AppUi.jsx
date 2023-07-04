@@ -22,13 +22,19 @@ export function AppUi() {
     deleteTodo,
     isOpenModal,
     setIsOpenModal,
+    completedTodos,
+    totalTodos,
+    setSearchValue,
   } = useTodosContext();
   return (
     <>
       <div className='container'>
         <main className='main-app'>
-          <TodoCounter />
-          <TodoSearch />
+          <TodoCounter
+            completedTodos={completedTodos}
+            totalTodos={totalTodos}
+          />
+          <TodoSearch setSearchValue={setSearchValue} />
           <TodoList>
             {loading && (
               <>
@@ -49,7 +55,10 @@ export function AppUi() {
               />
             ))}
           </TodoList>
-          <CreateTodoButton />
+          <CreateTodoButton
+            setIsOpenModal={setIsOpenModal}
+            isOpenModal={isOpenModal}
+          />
           <a href='https://www.linkedin.com/in/jhonjamesbedoya/'>
             By<span> Jhon James</span>
           </a>

@@ -1,7 +1,5 @@
-import { useTodosContext } from "../../TodoContext/TodoContext";
 import "./TodoCounter.css";
-export function TodoCounter() {
-  const { totalTodos, completedTodos } = useTodosContext();
+export function TodoCounter({ totalTodos, completedTodos }) {
   let isCompleted = completedTodos === totalTodos;
   let nametasks = totalTodos > 1 ? "tareas" : "tarea";
   return (

@@ -69,6 +69,6 @@ export const TodoProvider = ({ children }) => {
   return <TodoContext.Provider value={value}>{children}</TodoContext.Provider>;
 };
 
-export function useTodosContext() {
+export const useTodosContext = () => {
   return useContext(TodoContext);
-}
+};

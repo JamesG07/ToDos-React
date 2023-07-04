@@ -1,9 +1,6 @@
 import "./TodoSearch.css";
-// import React from "react";
-import { useTodosContext } from "../../TodoContext/TodoContext";
 import iconSearch from "../../assets/search-svgrepo-com.svg";
-export function TodoSearch() {
-  const { setSearchValue } = useTodosContext();
+export function TodoSearch({ setSearchValue }) {
   const saveData = (e) => {
     setSearchValue(e.target.value);
   };
